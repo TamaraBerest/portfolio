@@ -46,6 +46,10 @@ body {
     color: #fafafa;
     font-family: raleway-c;
     overflow-x: hidden;
+
+    &._lock {
+        overflow: hidden;
+    }
 }
 
 .hero {
@@ -114,4 +118,149 @@ body {
 
 .text-block__p {
     line-height: 1.75;
+}
+
+
+// другий комміт
+
+.page {
+
+    &__particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 20;
+
+        // & canvas {
+        //     z-index: 25;
+        // }
+    }
+
+    &__menu {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 54px;
+        right: 54px;
+        width: 54px;
+        height: 54px;
+        border: 2px solid #f4efec68;
+        border-radius: 10%;
+        cursor: pointer;
+        transition: all 1s ease 0s;
+        transform: rotateZ(0deg) scale(1);
+        z-index: 20;
+
+        &::before {
+            width: 32px;
+            height: 2px;
+            margin-bottom: 10px;
+            background: #f4efec68;
+            content: "";
+        }
+
+        &::after {
+            width: 32px;
+            height: 2px;
+            background: #f4efec68;
+            content: "";
+        }
+
+        @media (any-hover:hover) {
+            &:hover {
+                transition: .7s;
+                transform: rotateZ(180deg) scale(1.1);
+                background: #f4efec68;
+                border: #f4efec00;
+
+                &::before {
+                    background: black;
+                }
+
+                &::after {
+                    background: black;
+                }
+            }
+        }
+
+        &_bg {
+            position: fixed;
+            display: none;
+            // transform: translateX(100%);
+            // transition: all .75s cubic-bezier(.075, .5, 0, 1);
+            transition: 1s;
+            // will-change: transform;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.772);
+            z-index: 10;
+
+            &-active {
+                // transform: translateX(0%);
+                opacity: 1;
+            }
+
+            &-pre-active {
+                display: block;
+            }
+        }
+
+        &_list {
+            position: fixed;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // flex-direction: column;
+            // padding-top: 20px;
+            top: 144px;
+            right: 0;
+            width: 15%;
+            height: 40%;
+            z-index: 15;
+            // background: rgba(255, 255, 255, 0.2);
+            // border-radius: 5%;
+            // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            // backdrop-filter: blur(6px);
+            // -webkit-backdrop-filter: blur(6px);
+
+            &-item {
+                font-size: 30px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                transition: .5s;
+                transform: scale(1);
+                cursor: pointer;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &.active {
+                    color: rgb(29, 144, 0);
+                    cursor: default;
+
+                    @media (any-hover:hover) {
+                        &:hover {
+                            transform: scale(1);
+                        }
+                    }
+                }
+
+                @media (any-hover:hover) {
+                    &:hover {
+                        transition: .2s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
 }

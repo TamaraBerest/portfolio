@@ -13,12 +13,24 @@
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="libs/particles.min.js" defer></script>
     <script src="js/app.js" defer></script>
 </head>
 
 <body>
+    <div class="page__menu">
+    </div>
+    <div class="page__menu_bg">
+        <ul class="page__menu_list">
+            <li class="page__menu_list-item active">Portfolio</li>
+            <li class="page__menu_list-item">About Me</li>
+            <li class="page__menu_list-item">Contacts</li>
+        </ul>
+    </div>
     <div class="wrapper">
         <div class="content">
+
+            <div id="particles-js" class="page__particles"></div>
 
             <header class="hero-section">
                 <img data-speed=".6" class="hero" src="img/hero.png" alt="girl">

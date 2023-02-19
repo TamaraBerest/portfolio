@@ -47,3 +47,26 @@ if (ScrollTrigger.isTouch !== 1) {
     })
 
 }
+
+const menuBtn = document.querySelector(".page__menu");
+const menu = document.querySelector(".page__menu_bg");
+menuBtn.addEventListener("click", () => {
+    if (!menu.classList.contains("page__menu_bg-active")) {
+        menu.classList.toggle("page__menu_bg-pre-active");
+        setTimeout(() => {
+            menu.classList.toggle("page__menu_bg-active");
+            document.body.classList.toggle("_lock");
+        }, 54);
+    } else {
+        menu.classList.toggle("page__menu_bg-active");
+        document.body.classList.toggle("_lock");
+        setTimeout(() => {
+            menu.classList.toggle("page__menu_bg-pre-active");
+        }, 1054);
+    }
+});
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'assets/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+});
