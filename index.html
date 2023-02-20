@@ -9,12 +9,20 @@
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="format-detection" content="telephone=no">
     <!-- <link rel="shortcut icon" href="img/logo.png" type="image/png"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="libs/lightgallery.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+
+
 
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="libs/particles.min.js" defer></script>
     <script src="js/app.js" defer></script>
+
 </head>
 
 <body>
@@ -33,10 +41,11 @@
             <div id="particles-js" class="page__particles"></div>
 
             <header class="hero-section">
-                <img data-speed=".6" class="hero" src="img/hero.png" alt="girl">
+                <!-- <img data-speed=".6" class="hero" src="img/hero.png" alt="girl"> -->
                 <div class="container">
                     <div data-speed=".75" class="main-header">
-                        <h1 class="main-title">Tamara Berestiana</h1>
+                        <h1 class="main-title">Hi, I`m Tamara</h1>
+                        <h2 class="main-title_sub">Young Python Developer</h2>
                     </div>
                 </div>
             </header>
@@ -45,29 +54,69 @@
                 <div class="container">
                     <main class="gallery">
                         <div data-speed=".9" class="gallery__left">
-                            <img class="gallery__item" src="img/work/1.jpg" alt="alt">
-                            <img class="gallery__item" src="img/work/2.jpg" alt="alt">
+                            <video class="gallery__item gallery__item_1" src="img/work/game/IMG_5853.MP4" alt="video"
+                                autoplay loop muted></video>
+                            <!-- <img class="gallery__item" src="img/work/1.jpg" alt="alt"> -->
+                            <!-- <img class="gallery__item" src="img/work/2.jpg" alt="alt"> -->
 
                             <div class="text-block gallery__item">
-                                <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
-                                <p class="text-block__p">Lorem Ipsum je pseudo-latinský text, ktorý sa používa pri
+                                <h3 class="text-block__h">Responsive landing page is created on the Figma layout</h3>
+                                <!-- <p class="text-block__p">Lorem Ipsum je pseudo-latinský text, ktorý sa používa pri
                                     testovaní
-                                    rozloženia stránok, časopisov, letákov. Používa sa už od 16. storočia.</p>
+                                    rozloženia stránok, časopisov, letákov. Používa sa už od 16. storočia.</p> -->
                             </div>
 
-                            <img class="gallery__item" src="img/work/6.jpg" alt="alt">
+                            <!-- <img class="gallery__item" src="img/work/6.jpg" alt="alt"> -->
 
                         </div>
                         <div data-speed="1.1" class="gallery__right">
                             <div class="text-block gallery__item">
-                                <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
-                                <p class="text-block__p">Lorem Ipsum je pseudo-latinský text, ktorý sa používa pri
+                                <h4 class="text-block__h">Basic game is created in Python with pygame library</h4>
+                                <!-- <p class="text-block__p">Lorem Ipsum je pseudo-latinský text, ktorý sa používa pri
                                     testovaní
-                                    rozloženia stránok, časopisov, letákov. Používa sa už od 16. storočia.</p>
+                                    rozloženia stránok, časopisov, letákov. Používa sa už od 16. storočia.</p> -->
                             </div>
-                            <img class="gallery__item" src="img/work/4.jpg" alt="alt">
-                            <img class="gallery__item" src="img/work/5.jpg" alt="alt">
-                            <img class="gallery__item" src="img/work/3.jpg" alt="alt">
+                            <!-- Slider main container -->
+                            <div class="gallery__item gallery__item_2">
+                                <div class="swiper slider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper slider__wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide slider__slide">
+                                            <div class="slider__img"><img src="img/work/prototype/1.jpg" alt="alt">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slider__slide">
+                                            <div class="slider__img"><img src="img/work/prototype/2.jpg" alt="alt">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slider__slide">
+                                            <div class="slider__img"><img src="img/work/prototype/3.jpg" alt="alt">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slider__slide">
+                                            <div class="slider__img"><img src="img/work/prototype/4.jpg" alt="alt">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slider__slide">
+                                            <div class="slider__img"><img src="img/work/prototype/5.jpg" alt="alt">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev slider__nav"></div>
+                                    <div class="swiper-button-next slider__nav"></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                            </div>
+                            <!-- <img class="gallery__item" src="img/work/4.jpg" alt="alt"> -->
+                            <!-- <img class="gallery__item" src="img/work/5.jpg" alt="alt">
+                            <img class="gallery__item" src="img/work/3.jpg" alt="alt"> -->
 
                         </div>
                     </main>

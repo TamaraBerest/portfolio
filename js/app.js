@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
+
 if (ScrollTrigger.isTouch !== 1) {
     ScrollSmoother.create({
         wrapper: '.wrapper',
@@ -69,4 +70,29 @@ menuBtn.addEventListener("click", () => {
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
+});
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'flip',
+    // height: 1000,
+    autoHeight: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // // And if we need scrollbar
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    // },
 });
