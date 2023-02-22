@@ -139,6 +139,10 @@ h6 {
   will-change: transform;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url(../img/bg.jpg);
   background-size: 50px;
@@ -160,6 +164,56 @@ body._lock {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.main-header__scroll {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: calc(var(--index) * 4);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.main-header__scroll_button {
+  cursor: pointer;
+  padding: 10px 10px 15px 10px;
+  opacity: 0.7;
+  transform: scale(1);
+  transition: 1s;
+}
+@media (any-hover: hover) {
+  .main-header__scroll_button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+.main-header__text {
+  color: var(--color-text);
+  margin-bottom: 10px;
+  font-size: calc(var(--index) * 1.5);
+}
+.main-header__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header__arrow::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: var(--color-text);
+  transform: rotateZ(45deg) translateX(2.5px);
+}
+.main-header__arrow::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: var(--color-text);
+  transform: rotateZ(-45deg) translateX(-2.5px);
 }
 
 .container {
@@ -222,6 +276,21 @@ body._lock {
   color: var(--color-header);
   margin-bottom: 1.5rem;
 }
+.text-block__h_git {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.text-block__h_git img {
+  transition: 1s;
+  transform: rotateY(0deg) scale(1);
+}
+@media (any-hover: hover) {
+  .text-block__h_git img:hover {
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(1.1);
+  }
+}
 
 .text-block__p {
   line-height: 1.75;
@@ -266,7 +335,7 @@ body._lock {
 }
 @media (any-hover: hover) {
   .page__menu:hover {
-    transition: 0.7s;
+    transition: 0.5s;
     transform: rotateZ(180deg) scale(1.1);
     background: rgba(244, 239, 236, 0.4078431373);
     border: rgba(244, 239, 236, 0);
@@ -334,7 +403,7 @@ body._lock {
 
 .slider {
   padding: 10px;
-  width: 500px;
+  width: calc(var(--index) * 36);
   border: 10px solid rgba(138, 135, 134, 0.7529411765);
   border-radius: 8px;
   transform: translateX(-20%);
