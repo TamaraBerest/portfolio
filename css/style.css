@@ -206,14 +206,14 @@ body._lock {
   width: 12px;
   height: 2px;
   background: var(--color-text);
-  transform: rotateZ(45deg) translateX(2.5px);
+  transform: rotateZ(45deg) translateX(3.5px);
 }
 .main-header__arrow::after {
   content: "";
   width: 12px;
   height: 2px;
   background: var(--color-text);
-  transform: rotateZ(-45deg) translateX(-2.5px);
+  transform: rotateZ(-45deg) translateX(-3.5px);
 }
 
 .portfolio {

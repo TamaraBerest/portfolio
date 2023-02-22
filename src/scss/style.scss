@@ -125,7 +125,7 @@ body {
             width: 12px;
             height: 2px;
             background: var(--color-text);
-            transform: rotateZ(45deg) translateX(2.5px);
+            transform: rotateZ(45deg) translateX(3.5px);
         }
 
         &::after {
@@ -133,7 +133,7 @@ body {
             width: 12px;
             height: 2px;
             background: var(--color-text);
-            transform: rotateZ(-45deg) translateX(-2.5px);
+            transform: rotateZ(-45deg) translateX(-3.5px);
         }
     }
 }
