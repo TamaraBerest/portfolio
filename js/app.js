@@ -76,7 +76,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    effect: 'flip',
+    // effect: 'flip',
     // height: 1000,
     autoHeight: true,
 
