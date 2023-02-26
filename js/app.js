@@ -98,11 +98,11 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
 // });
 // const portfolio = document.querySelector(".gallery");
 
-// const buttonScroll = document.querySelector(".main-header__scroll_button");
-// buttonScroll.addEventListener("click", () => {
-//     // portfolio.scrollIntoView({
-//     //     block: "center",
-//     //     behavior: "smooth",
-//     // });
-//     window.scrollTo(0, document.documentElement.clientHeight * 1.2);
-// })
+const buttonScroll = document.querySelector(".main-header__scroll_button");
+buttonScroll.addEventListener("click", () => {
+    // portfolio.scrollIntoView({
+    //     block: "center",
+    //     behavior: "smooth",
+    // });
+    window.scrollTo(0, document.documentElement.clientHeight * 1.2);
+})
