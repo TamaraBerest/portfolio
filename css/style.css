@@ -463,7 +463,6 @@ body._lock {
 
 .slider {
   padding: 10px;
-  width: calc(var(--index) * 36);
   border: 10px solid rgba(138, 135, 134, 0.7529411765);
   border-radius: 8px;
   transform: translateX(-20%);
@@ -471,7 +470,6 @@ body._lock {
 @media (max-width: 704px) {
   .slider {
     border: 6px solid rgba(138, 135, 134, 0.7529411765);
-    width: calc(var(--index) * 46);
     transform: translateX(-12%);
   }
 }

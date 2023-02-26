@@ -442,14 +442,14 @@ body {
 .slider {
 
     padding: 10px;
-    width: calc(var(--index) * 36);
+    // width: calc(var(--index) * 36);
     border: 10px solid #8a8786c0;
     border-radius: 8px;
     transform: translateX(-20%);
 
     @media(max-width: 704px) {
         border: 6px solid #8a8786c0;
-        width: calc(var(--index) * 46);
+        // width: calc(var(--index) * 46);
         transform: translateX(-12%);
 
     }
