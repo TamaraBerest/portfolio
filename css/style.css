@@ -255,6 +255,7 @@ body._lock {
   margin-bottom: calc(var(--gallery-gap) * 2);
   max-height: 180vh;
   border-radius: 8px;
+  min-width: 0;
 }
 @media (max-width: 704px) {
   .gallery__item {
@@ -459,4 +460,16 @@ body._lock {
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+  color: rgba(255, 255, 255, 0.509);
+  font-size: 24px;
+}
+
+.slider .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.509);
 }
