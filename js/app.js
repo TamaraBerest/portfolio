@@ -72,30 +72,30 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     effect: 'flip',
-//     // height: 1000,
-//     autoHeight: true,
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'flip',
+    // height: 1000,
+    autoHeight: true,
 
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// });
+    // // And if we need scrollbar
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    // },
+});
 // const portfolio = document.querySelector(".gallery");
 
 const buttonScroll = document.querySelector(".main-header__scroll_button");
