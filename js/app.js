@@ -72,30 +72,30 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // effect: 'flip',
-    // height: 1000,
-    autoHeight: true,
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
+//     // effect: 'flip',
+//     // height: 1000,
+//     autoHeight: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
 
-    // // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
-});
+//     // // And if we need scrollbar
+//     // scrollbar: {
+//     //     el: '.swiper-scrollbar',
+//     // },
+// });
 // const portfolio = document.querySelector(".gallery");
 
 const buttonScroll = document.querySelector(".main-header__scroll_button");
@@ -110,3 +110,40 @@ buttonScroll.addEventListener("click", () => {
 document.addEventListener('touchmove', function (event) {
     if (event.scale !== 1) { event.preventDefault(); }
 }, false);
+
+const sliderItems = document.querySelectorAll(".slider__slide");
+const sliderNext = document.querySelector(".slider__arrows_next");
+const sliderBack = document.querySelector(".slider__arrows_back");
+sliderNext.addEventListener("click", () => {
+    for (let i = 0; i < sliderItems.length; i++) {
+        if (sliderItems[i].classList.contains("active")) {
+            if (i === sliderItems.length - 1) {
+                sliderItems[4].classList.remove("active");
+                sliderItems[0].classList.add("active");
+                break
+            }
+            else {
+                sliderItems[i].classList.remove("active");
+                sliderItems[i + 1].classList.add("active");
+                break
+            }
+        }
+    }
+})
+
+sliderBack.addEventListener("click", () => {
+    for (let i = 0; i < sliderItems.length; i++) {
+        if (sliderItems[i].classList.contains("active")) {
+            if (i === 0) {
+                sliderItems[0].classList.remove("active");
+                sliderItems[4].classList.add("active");
+                break
+            }
+            else {
+                sliderItems[i].classList.remove("active");
+                sliderItems[i - 1].classList.add("active");
+                break
+            }
+        }
+    }
+})
