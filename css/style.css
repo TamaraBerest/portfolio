@@ -141,12 +141,11 @@ h6 {
 
 html {
   scroll-behavior: smooth;
-  background: #000;
+  background: #1f1e1e;
 }
 
 body {
-  background-image: url(../img/bg.jpg);
-  background-size: 50px;
+  background: #1f1e1e;
   color: #fafafa;
   font-family: raleway-c;
   overflow-x: hidden;
@@ -169,14 +168,19 @@ body._lock {
 .main-header__scroll {
   position: absolute;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
   padding-bottom: calc(var(--index) * 6);
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+}
+@media (any-hover: none) {
+  .main-header__scroll {
+    padding-bottom: calc(var(--index) * 24);
+  }
 }
 .main-header__scroll_button {
   cursor: pointer;
@@ -270,6 +274,7 @@ body._lock {
 }
 .gallery__item_1 {
   border: 10px solid rgba(138, 135, 134, 0.7529411765);
+  width: 50vw;
 }
 @media (max-width: 704px) {
   .gallery__item_1 {
@@ -364,7 +369,7 @@ body._lock {
   border-radius: 10%;
   cursor: pointer;
   transition: all 1s ease 0s;
-  transform: rotateZ(0deg) scale(1);
+  transform: rotateZ(0deg);
   z-index: 20;
 }
 @media (max-width: 754px) {
@@ -381,6 +386,7 @@ body._lock {
   margin-bottom: 10px;
   background: rgba(244, 239, 236, 0.4078431373);
   content: "";
+  transition: 0.5s;
 }
 @media (max-width: 754px) {
   .page__menu::before {
@@ -392,11 +398,18 @@ body._lock {
   height: 2px;
   background: rgba(244, 239, 236, 0.4078431373);
   content: "";
+  transition: 0.5s;
 }
 @media (max-width: 754px) {
   .page__menu::after {
     width: 20px;
   }
+}
+.page__menu.active::before {
+  transform: rotateZ(45deg) translate3d(4.25px, 4.25px, 0);
+}
+.page__menu.active::after {
+  transform: rotateZ(-45deg) translate3d(4.25px, -4.25px, 0);
 }
 @media (any-hover: hover) {
   .page__menu:hover {
@@ -439,6 +452,11 @@ body._lock {
   top: 144px;
   right: 0;
   z-index: 15;
+}
+@media (any-hover: none) {
+  .page__menu_list {
+    padding-right: calc(var(--index) * 12);
+  }
 }
 .page__menu_list-item {
   font-size: 30px;

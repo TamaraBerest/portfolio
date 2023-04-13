@@ -17,6 +17,7 @@
 
 
 
+    <script src="js/dynamicAdapt.js" defer></script>
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
@@ -66,7 +67,7 @@
                                 <!-- <img class="gallery__item" src="img/work/1.jpg" alt="alt"> -->
                                 <!-- <img class="gallery__item" src="img/work/2.jpg" alt="alt"> -->
                             </div>
-                            <div class="text-block gallery__item">
+                            <div class="text-block gallery__item" data-da=".gallery__right, 570, first">
                                 <h3 class="text-block__h text-block__h_1">Responsive landing page is created on the
                                     Figma layout</h3>
                                 <a href="/" class="text-block__h_git"><img src="img/github.png" alt="git"></a>
@@ -79,7 +80,7 @@
 
                         </div>
                         <div data-speed="1.1" class="gallery__right">
-                            <div class="text-block gallery__item">
+                            <div class="text-block gallery__item" data-da=".gallery__left, 570, last">
                                 <h4 class="text-block__h">Basic game is created in Python with pygame library</h4>
                                 <a href="/" class="text-block__h_git"><img src="img/github.png" alt="git"></a>
                                 <!-- <p class="text-block__p">Lorem Ipsum je pseudo-latinský text, ktorý sa používa pri

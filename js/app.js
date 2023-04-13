@@ -54,12 +54,15 @@ const menu = document.querySelector(".page__menu_bg");
 menuBtn.addEventListener("click", () => {
     if (!menu.classList.contains("page__menu_bg-active")) {
         menu.classList.toggle("page__menu_bg-pre-active");
+        menuBtn.classList.toggle("active");
+
         setTimeout(() => {
             menu.classList.toggle("page__menu_bg-active");
             document.body.classList.toggle("_lock");
         }, 54);
     } else {
         menu.classList.toggle("page__menu_bg-active");
+        menuBtn.classList.toggle("active");
         document.body.classList.toggle("_lock");
         setTimeout(() => {
             menu.classList.toggle("page__menu_bg-pre-active");
