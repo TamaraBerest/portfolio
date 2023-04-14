@@ -93,7 +93,7 @@ body {
         top: 0;
 
         @media(any-hover:none) {
-            padding-bottom: 206px;
+            padding-bottom: 150px;
 
         }
 
@@ -168,7 +168,9 @@ body {
     // text-shadow: 1px 1px 4px rgb(157, 154, 154);
 
     @media(max-width: 480px) {
-        font-size: 54px;
+        text-align: center;
+        font-size: 66px;
+        flex-wrap: wrap;
     }
 
     &_sub {
@@ -183,7 +185,7 @@ body {
         // margin-bottom: calc(var(--index) * 24);
 
         @media(max-width: 480px) {
-            font-size: 24px;
+            font-size: 30px;
         }
     }
 
@@ -267,9 +269,19 @@ body {
         line-height: 1.5;
     }
 
+    @media(max-width:480px) {
+        font-size: 2rem;
+        text-align: center;
+    }
+
     &_1 {
         @media(max-width: 554px) {
             padding-top: 34px;
+        }
+
+        @media(max-width:480px) {
+            font-size: 2rem;
+            text-align: center;
         }
     }
 
@@ -281,6 +293,11 @@ body {
 
         @media(max-width:1152px) {
             position: relative;
+        }
+
+        @media(max-width:480px) {
+            left: 50px;
+
         }
 
         & img {
@@ -440,7 +457,7 @@ body {
             z-index: 15;
 
             @media(any-hover:none) {
-                padding-right: 124px;
+                padding-right: 44px;
 
             }
 
@@ -498,6 +515,10 @@ body {
         height: 150px;
         width: 250px;
         transform: translateX(-20px);
+    }
+
+    @media(max-width:480px) {
+        left: 20px;
     }
 
     &__slide {
