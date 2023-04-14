@@ -93,7 +93,7 @@ body {
         top: 0;
 
         @media(any-hover:none) {
-            padding-bottom: calc(var(--index) * 24);
+            padding-bottom: calc(var(--index) * 74);
 
         }
 
@@ -167,6 +167,10 @@ body {
     // color: var(--color-text);
     // text-shadow: 1px 1px 4px rgb(157, 154, 154);
 
+    @media(max-width: 480px) {
+        font-size: calc(var(--index) * 12);
+    }
+
     &_sub {
         font-size: calc(var(--index) * 2.5);
         // position: absolute;
@@ -177,7 +181,12 @@ body {
         color: var(--color-text);
         // text-shadow: 1px 1px 2px rgb(130, 128, 128);
         // margin-bottom: calc(var(--index) * 24);
+
+        @media(max-width: 480px) {
+            font-size: calc(var(--index) * 5);
+        }
     }
+
 }
 
 .gallery {
@@ -431,7 +440,7 @@ body {
             z-index: 15;
 
             @media(any-hover:none) {
-                padding-right: calc(var(--index) * 12);
+                padding-right: calc(var(--index) * 54);
 
             }
 
