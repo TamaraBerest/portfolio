@@ -179,7 +179,7 @@ body._lock {
 }
 @media (any-hover: none) {
   .main-header__scroll {
-    padding-bottom: calc(var(--index) * 74);
+    padding-bottom: 206px;
   }
 }
 .main-header__scroll_button {
@@ -237,7 +237,7 @@ body._lock {
 }
 @media (max-width: 480px) {
   .main-title {
-    font-size: calc(var(--index) * 12);
+    font-size: 54px;
   }
 }
 .main-title_sub {
@@ -249,7 +249,7 @@ body._lock {
 }
 @media (max-width: 480px) {
   .main-title_sub {
-    font-size: calc(var(--index) * 5);
+    font-size: 24px;
   }
 }
 
@@ -465,7 +465,7 @@ body._lock {
 }
 @media (any-hover: none) {
   .page__menu_list {
-    padding-right: calc(var(--index) * 54);
+    padding-right: 124px;
   }
 }
 .page__menu_list-item {

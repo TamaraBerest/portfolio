@@ -93,7 +93,7 @@ body {
         top: 0;
 
         @media(any-hover:none) {
-            padding-bottom: calc(var(--index) * 74);
+            padding-bottom: 206px;
 
         }
 
@@ -168,7 +168,7 @@ body {
     // text-shadow: 1px 1px 4px rgb(157, 154, 154);
 
     @media(max-width: 480px) {
-        font-size: calc(var(--index) * 12);
+        font-size: 54px;
     }
 
     &_sub {
@@ -183,7 +183,7 @@ body {
         // margin-bottom: calc(var(--index) * 24);
 
         @media(max-width: 480px) {
-            font-size: calc(var(--index) * 5);
+            font-size: 24px;
         }
     }
 
@@ -440,7 +440,7 @@ body {
             z-index: 15;
 
             @media(any-hover:none) {
-                padding-right: calc(var(--index) * 54);
+                padding-right: 124px;
 
             }
 
