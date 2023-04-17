@@ -360,7 +360,7 @@ body._lock {
 }
 @media (max-width: 480px) {
   .text-block__h_git {
-    left: 50px;
+    left: 150px;
   }
 }
 .text-block__h_git img {
