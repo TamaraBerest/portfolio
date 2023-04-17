@@ -282,6 +282,7 @@ body._lock {
 @media (max-width: 704px) {
   .gallery__item {
     max-width: calc(var(--index) * 32);
+    vertical-align: baseline;
   }
 }
 .gallery__item_1 {
@@ -485,6 +486,7 @@ body._lock {
 @media (any-hover: none) {
   .page__menu_list {
     padding-right: 44px;
+    top: 12%;
   }
 }
 .page__menu_list-item {
