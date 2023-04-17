@@ -216,7 +216,7 @@ body {
 
     @media(max-width: 704px) {
         max-width: calc(var(--index) * 32);
-        vertical-align: baseline;
+        margin-top: 25%;
     }
 
     &_1 {
@@ -226,6 +226,7 @@ body {
 
         @media(max-width: 704px) {
             border: 6px solid #8a8786c0;
+            margin-top: 25%;
             // margin-bottom: 200px;
         }
     }

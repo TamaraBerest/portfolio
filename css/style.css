@@ -282,7 +282,7 @@ body._lock {
 @media (max-width: 704px) {
   .gallery__item {
     max-width: calc(var(--index) * 32);
-    vertical-align: baseline;
+    margin-top: 25%;
   }
 }
 .gallery__item_1 {
@@ -292,6 +292,7 @@ body._lock {
 @media (max-width: 704px) {
   .gallery__item_1 {
     border: 6px solid rgba(138, 135, 134, 0.7529411765);
+    margin-top: 25%;
   }
 }
 
