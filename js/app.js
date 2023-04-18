@@ -107,7 +107,7 @@ buttonScroll.addEventListener("click", () => {
     //     block: "center",
     //     behavior: "smooth",
     // });
-    window.scrollTo(0, document.documentElement.clientHeight * 1.2);
+    window.scrollTo(0, document.documentElement.clientHeight * 1);
 })
 
 document.addEventListener('touchmove', function (event) {

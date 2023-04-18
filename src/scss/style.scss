@@ -211,9 +211,8 @@ body {
     margin: 0;
     margin-top: calc(var(--gallery-gap) * 2.3);
 
-    @media (any-hover:none) {
-        margin-top: 25%;
-        margin-bottom: 25%;
+    @media(any-hover:none) {
+        margin: 0;
     }
 }
 
@@ -226,7 +225,10 @@ body {
 
     @media(max-width: 704px) {
         max-width: calc(var(--index) * 32);
-        margin-bottom: 25%;
+    }
+
+    @media(any-hover:none) {
+        margin: 0;
     }
 
     &_1 {
@@ -253,6 +255,16 @@ body {
 
     @media(max-width: 570px) {
         flex-direction: column-reverse;
+    }
+
+    @media(any-hover:none) {
+        margin: 0;
+    }
+}
+
+.gallery__item {
+    @media(any-hover:none) {
+        margin-bottom: 25% !important;
     }
 }
 

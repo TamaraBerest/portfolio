@@ -278,8 +278,7 @@ body._lock {
 }
 @media (any-hover: none) {
   .gallery__right .gallery__item {
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin: 0;
   }
 }
 
@@ -293,7 +292,11 @@ body._lock {
 @media (max-width: 704px) {
   .gallery__item {
     max-width: calc(var(--index) * 32);
-    margin-bottom: 25%;
+  }
+}
+@media (any-hover: none) {
+  .gallery__item {
+    margin: 0;
   }
 }
 .gallery__item_1 {
@@ -312,6 +315,17 @@ body._lock {
 @media (max-width: 570px) {
   .gallery__left {
     flex-direction: column-reverse;
+  }
+}
+@media (any-hover: none) {
+  .gallery__left {
+    margin: 0;
+  }
+}
+
+@media (any-hover: none) {
+  .gallery__item {
+    margin-bottom: 25% !important;
   }
 }
 
