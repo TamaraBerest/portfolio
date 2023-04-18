@@ -338,7 +338,7 @@ body._lock {
   font-size: 2rem;
   line-height: 2.4rem;
   color: var(--color-header);
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 @media (max-width: 1152px) {
   .text-block__h {
@@ -355,9 +355,6 @@ body._lock {
     font-size: 2rem;
     text-align: center;
   }
-}
-.text-block__h_1 {
-  max-width: calc(var(--index) * 24);
 }
 @media (max-width: 554px) {
   .text-block__h_1 {
