@@ -210,6 +210,11 @@ body {
 .gallery__right .gallery__item {
     margin: 0;
     margin-top: calc(var(--gallery-gap) * 2.3);
+
+    @media (any-hover:none) {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
 }
 
 .gallery__item {
@@ -299,7 +304,7 @@ body {
         }
 
         @media(max-width:480px) {
-            left: 50%;
+            left: 40%;
         }
 
         & img {

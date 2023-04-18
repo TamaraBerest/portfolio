@@ -276,6 +276,12 @@ body._lock {
   margin: 0;
   margin-top: calc(var(--gallery-gap) * 2.3);
 }
+@media (any-hover: none) {
+  .gallery__right .gallery__item {
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+}
 
 .gallery__item {
   max-width: calc(var(--index) * 24);
@@ -359,7 +365,7 @@ body._lock {
 }
 @media (max-width: 480px) {
   .text-block__h_git {
-    left: 50%;
+    left: 40%;
   }
 }
 .text-block__h_git img {
