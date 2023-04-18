@@ -295,6 +295,8 @@ body {
     }
 
     &_1 {
+        max-width: calc(var(--index) * 24);
+
         @media(max-width: 554px) {
             padding-top: 34px;
         }

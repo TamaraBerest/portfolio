@@ -356,6 +356,9 @@ body._lock {
     text-align: center;
   }
 }
+.text-block__h_1 {
+  max-width: calc(var(--index) * 24);
+}
 @media (max-width: 554px) {
   .text-block__h_1 {
     padding-top: 34px;
