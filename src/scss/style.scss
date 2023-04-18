@@ -221,7 +221,6 @@ body {
 
     @media(max-width: 704px) {
         max-width: calc(var(--index) * 32);
-        margin-top: 25%;
         margin-bottom: 25%;
     }
 
@@ -232,7 +231,6 @@ body {
 
         @media(max-width: 704px) {
             border: 6px solid #8a8786c0;
-            margin-top: 25%;
             // margin-bottom: 200px;
         }
     }
@@ -301,7 +299,7 @@ body {
         }
 
         @media(max-width:480px) {
-            left: 50vw;
+            left: 50%;
         }
 
         & img {
