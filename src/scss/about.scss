@@ -1,7 +1,10 @@
-.content {
-    @media(any-hover:hover) {
-        &:hover {
-            height: 100% !important;
-        }
+.content,
+.wrapper {
+    height: 100%;
+}
+
+@media(any-hover:hover) {
+    .content {
+        height: 100% !important;
     }
 }
