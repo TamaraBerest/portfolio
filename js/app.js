@@ -73,7 +73,13 @@ menuBtn.addEventListener("click", () => {
 });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', '../assets/particles.json', function () {
+let json_path;
+if (document.querySelector(".portfolio")) {
+    json_path = './assets/particles.json';
+} else {
+    json_path = '../assets/particles.json';
+}
+particlesJS.load('particles-js', json_path, function () {
     console.log('callback - particles.js config loaded');
 });
 

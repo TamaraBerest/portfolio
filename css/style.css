@@ -632,9 +632,6 @@ body._lock {
   transform: rotateZ(-45deg) translateY(8px);
 }
 
-.about {
-  height: 100vh;
-}
 .about__text {
   font-size: calc(var(--index) * 2.3);
   line-height: 1;
