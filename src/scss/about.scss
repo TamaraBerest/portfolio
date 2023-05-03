@@ -1,0 +1,7 @@
+.content {
+    @media(any-hover:hover) {
+        &:hover {
+            height: 100%;
+        }
+    }
+}
