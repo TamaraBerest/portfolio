@@ -646,6 +646,12 @@ body._lock {
     font-size: 30px;
   }
 }
+@media (max-width: 1000px) {
+  .about__text {
+    width: 100%;
+    font-size: 50px;
+  }
+}
 .about__resume {
   color: rgba(90, 185, 200, 0.724);
   transition: 0.5s;
@@ -666,6 +672,16 @@ body._lock {
   width: 450px;
   grid-gap: 0.5rem;
   box-shadow: 5px 5px 5px black;
+}
+@media (max-width: 1000px) {
+  .about .image-container {
+    display: none;
+  }
+}
+@media (min-width: 1350px) {
+  .about .image-container {
+    width: 600px;
+  }
 }
 .about .image-container .image {
   position: relative;

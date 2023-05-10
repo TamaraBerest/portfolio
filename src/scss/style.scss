@@ -687,6 +687,12 @@ body {
         @media(max-width: 480px) {
             font-size: 30px;
         }
+
+        @media(max-width: 1000px) {
+            width: 100%;
+            font-size: 50px;
+
+        }
     }
 
     &__resume {
@@ -713,6 +719,14 @@ body {
         box-shadow: 5px 5px 5px black;
         // padding-top: 2%;
         // padding: 50px 0 70px 0;
+
+        @media(max-width: 1000px) {
+            display: none;
+        }
+
+        @media(min-width: 1350px) {
+            width: 600px;
+        }
     }
 
     .image-container .image {
