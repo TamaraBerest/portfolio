@@ -641,15 +641,9 @@ body._lock {
   text-align: justify;
   text-shadow: 10px 10px 10px black;
 }
-@media (max-width: 480px) {
+@media (max-width: 584px) {
   .about__text {
-    font-size: 30px;
-  }
-}
-@media (max-width: 1000px) {
-  .about__text {
-    width: 100%;
-    font-size: 50px;
+    font-size: 15px;
   }
 }
 .about__resume {
@@ -673,7 +667,7 @@ body._lock {
   grid-gap: 0.5rem;
   box-shadow: 5px 5px 5px black;
 }
-@media (max-width: 1000px) {
+@media (max-width: 590px) {
   .about .image-container {
     display: none;
   }
@@ -681,6 +675,16 @@ body._lock {
 @media (min-width: 1350px) {
   .about .image-container {
     width: 600px;
+  }
+}
+@media (max-width: 1040px) {
+  .about .image-container {
+    width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .about .image-container {
+    width: 200px;
   }
 }
 .about .image-container .image {
