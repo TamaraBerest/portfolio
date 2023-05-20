@@ -643,7 +643,7 @@ body._lock {
 }
 @media (max-width: 590px) {
   .about__text {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 2;
   }
 }
@@ -743,7 +743,7 @@ body._lock {
 }
 @media (max-width: 590px) {
   .filling__left {
-    max-width: 80%;
+    max-width: 90%;
     padding-top: 30%;
     padding-left: 10%;
   }
